@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+const foregroundColor = "purple";
+const backgroundColor = "lightgray";
+const isRed = false;
+---
+
+<MainLayout title="blog">
+  <p>Hi from <span>Home</span></p>
+  <div class:list={["big", { red: isRed }]}>test</div>
+</MainLayout>
+
+<style lang="scss" define:vars={{ foregroundColor, backgroundColor }}>
+  p {
+    background-color: var(--backgroundColor);
+    color: var(--foregroundColor);
+    span {
+      color: blue;
+    }
+    font-size: 5rem;
+  }
+
+  .red {
+    background-color: red;
+  }
+</style>
