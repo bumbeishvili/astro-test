@@ -317,7 +317,7 @@ button {
 
 [aria-current="page"] {
   color: darkblue;
-  text-shadow:0px 0px 1px darkblue;
+  text-shadow: 0px 0px 1px darkblue;
 }
 
 ::selection {
@@ -629,4 +629,10 @@ header {
 
 .sidebar [aria-label="Blog categories"] {
   margin-block: 0;
+}
+
+
+.black-btn {
+  background-color: black;
+  color: white;
 }
